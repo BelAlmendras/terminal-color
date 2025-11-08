@@ -8,5 +8,33 @@ function simularError() {
 function saludar(nombre) {
   console.log(chalk.cyan(`Hola ${nombre}, ¡bienvenido al mundo JavaScript! 🌍`));
 }
+
+
+function mostrarEstado() {
+  function inicio() {
+console.log(chalk.blue('👋 ¡Bienvenido a la Terminal rarita!'));
+}
+function proceso() {
+  console.warn(chalk.yellow('ℹ️ Cargando Tarea 1/3...'));
+  console.warn(chalk.yellow('ℹ️ Cargando Tarea 2/3...'));
+  console.warn(chalk.yellow('ℹ️ Cargando Tarea 3/3...'));
+  simularError()
+}
+function finalizacion() {
+  console.info(chalk.green('TAREAS COMPLETADAS'));
+}
+  inicio();
+  proceso();
+  finalizacion();
+}
+
 saludar("Equipo B");
-simularError()
+saludar("Equipo A");
+function saludar(nombre) {
+  console.log(chalk.cyan(`Hola ${nombre}, ¡bienvenido al mundo JavaScript! 🌍`));
+}
+
+// Prueba de función
+
+mostrarEstado();
+
