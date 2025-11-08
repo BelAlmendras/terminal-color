@@ -23,16 +23,15 @@ function proceso() {
 function finalizacion() {
   console.info(chalk.green('TAREAS COMPLETADAS'));
 }
-  inicio();
-  proceso();
-  finalizacion();
+    inicio();
+    proceso();
+    finalizacion();
 }
 
-saludar("Equipo B");
 saludar("Equipo A");
-function saludar(nombre) {
-  console.log(chalk.cyan(`Hola ${nombre}, ¡bienvenido al mundo JavaScript! 🌍`));
-}
+saludar("Equipo B");
+
+
 
 // Prueba de función
 
